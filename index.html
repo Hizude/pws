@@ -1,27 +1,58 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+  <title>Home | PWS</title>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet">
+  <link href="common/styles.css" rel="stylesheet">
 </head>
-<body class="font-sans">
+<body class="text-white font-sans bg-black">
   <header>
-    <a href="#maincontent" class="skip-navigation">Ga naar inhoud</a>
-    <nav>
-      <ul>
-        <a href="index.html" class="">Home</a>
-        <a href="/public/resultaten.html" class="">Resultaten</a>
-        <a href="/public/verslag.html" class="">Verslag</a>
-        <a href="/public/Toegankelijkheid.html" class="">Toegankelijkheid</a>
+    <!-- <a href="#maincontent" class="text-2xl bg-yellow-700 sr-only focus:not-sr-only" tabindex="1">Ga naar inhoud</a> -->
+    <nav class="bg-indigo-700 py-2 md:py-1 md:flex md:flex-row">
+      <div class="px-6 flex justify-between items-center">
+        <div id="logo">
+          <a href="#"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" width="4em" height="4em" style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);" preserveAspectRatio="xMidYMid meet" viewBox="0 0 64 64"><path d="M32 7C15.434 7 2 24.271 2 30.232s13.434 23.232 30 23.232c4.615 0 8.985-1.343 12.892-3.405L55.58 57V41.686c4.017-4.4 6.42-8.935 6.42-11.454C62 24.271 48.568 7 32 7zm0 38.384c-8.283 0-15-6.784-15-15.151c0-8.369 6.717-15.151 15-15.151c8.285 0 15 6.782 15 15.151c0 8.367-6.715 15.151-15 15.151z" fill="white"/><path d="M32 21.142c-.975 0-1.911.161-2.79.45A5.038 5.038 0 0 1 31 25.435c0 2.788-2.238 5.05-5 5.05a4.925 4.925 0 0 1-2.963-1.002a9.755 9.755 0 0 0-.037.749c0 5.02 4.029 9.091 9 9.091s9-4.071 9-9.091c0-5.021-4.029-9.09-9-9.09" fill="orange"/></svg>
+          </a>
+        </div>
+        <button id="burger" class="cursor-pointer md:hidden" >
+          <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" width="3em" height="3em" style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);" preserveAspectRatio="xMidYMid meet" viewBox="0 0 512 512"><path fill="white" d="M80 96h352v32H80z"/><path fill="white" d="M80 240h352v32H80z"/><path fill="white" d="M80 384h352v32H80z"/></svg>
+        </button>
+      </div>
+      <ul id="menu" class="hidden text-xl mt-4 flex flex-col items-start md:block md:mt-0 md:flex md:flex-row md:items-center md:text-lg">
+        <li class="w-full px-2 py-2 hover:bg-indigo-900 md:border-b-2 md:ml-6">
+          <a href="index.html" class="flex justify-start items-center">
+            <svg class="mr-2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" width="2em" height="2em" style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);" preserveAspectRatio="xMidYMid meet" viewBox="0 0 1024 1024"><path d="M946.5 505L560.1 118.8l-25.9-25.9a31.5 31.5 0 0 0-44.4 0L77.5 505a63.9 63.9 0 0 0-18.8 46c.4 35.2 29.7 63.3 64.9 63.3h42.5V940h691.8V614.3h43.4c17.1 0 33.2-6.7 45.3-18.8a63.6 63.6 0 0 0 18.7-45.3c0-17-6.7-33.1-18.8-45.2zM568 868H456V664h112v204zm217.9-325.7V868H632V640c0-22.1-17.9-40-40-40H432c-22.1 0-40 17.9-40 40v228H238.1V542.3h-96l370-369.7l23.1 23.1L882 542.3h-96.1z" fill="#FFFFFF"/></svg>
+            <span>Home</span>
+          </a>
+        </li>
+        <li class="w-full px-2 py-2 hover:bg-indigo-900 md:ml-6">
+          <a href="/pages/html/resultaten.html" class="flex justify-start items-center">
+            <svg class="mr-2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" width="2em" height="2em" style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);" preserveAspectRatio="xMidYMid meet" viewBox="0 0 1024 1024"><path d="M699 353h-46.9c-10.2 0-19.9 4.9-25.9 13.3L469 584.3l-71.2-98.8c-6-8.3-15.6-13.3-25.9-13.3H325c-6.5 0-10.3 7.4-6.5 12.7l124.6 172.8a31.8 31.8 0 0 0 51.7 0l210.6-292c3.9-5.3.1-12.7-6.4-12.7z" fill="#FFFFFF"/><path d="M512 64C264.6 64 64 264.6 64 512s200.6 448 448 448s448-200.6 448-448S759.4 64 512 64zm0 820c-205.4 0-372-166.6-372-372s166.6-372 372-372s372 166.6 372 372s-166.6 372-372 372z" fill="#FFFFFF"/></svg>
+            <span>Resultaten</span>
+          </a>
+        </li>
+        <li class="w-full px-2 py-2 hover:bg-indigo-900 md:ml-6">
+          <a href="/pages/html/verslag.html" class="flex justify-start items-center">
+            <svg class="mr-2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" width="2em" height="2em" style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);" preserveAspectRatio="xMidYMid meet" viewBox="0 0 1024 1024"><path d="M854.6 288.6L639.4 73.4c-6-6-14.1-9.4-22.6-9.4H192c-17.7 0-32 14.3-32 32v832c0 17.7 14.3 32 32 32h640c17.7 0 32-14.3 32-32V311.3c0-8.5-3.4-16.7-9.4-22.7zM790.2 326H602V137.8L790.2 326zm1.8 562H232V136h302v216a42 42 0 0 0 42 42h216v494zM504 618H320c-4.4 0-8 3.6-8 8v48c0 4.4 3.6 8 8 8h184c4.4 0 8-3.6 8-8v-48c0-4.4-3.6-8-8-8zM312 490v48c0 4.4 3.6 8 8 8h384c4.4 0 8-3.6 8-8v-48c0-4.4-3.6-8-8-8H320c-4.4 0-8 3.6-8 8z" fill="#FFFFFF"/></svg>
+            <span>Verslag</span>
+          </a>
+        </li>
+        <li class="w-full px-2 py-2 hover:bg-indigo-900 md:ml-6">
+          <a href="/pages/html/Toegankelijkheid.html" class="flex justify-start items-center">
+            <svg class="mr-2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" width="2em" height="2em" style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);" preserveAspectRatio="xMidYMid meet" viewBox="0 0 32 32"><path d="M23 14v-2H9v2h5v2.734l-3.868 6.77l1.736.992L15.58 18h.84l3.712 6.496l1.736-.992L18 16.734V14h5z" fill="#FFFFFF"/><circle cx="16" cy="9" r="2" fill="#FFFFFF"/><path d="M16 30a14 14 0 1 1 14-14a14.016 14.016 0 0 1-14 14zm0-26a12 12 0 1 0 12 12A12.014 12.014 0 0 0 16 4z" fill="#FFFFFF"/></svg>
+            <span>Toegankelijkheid</span>
+          </a>
+        </li>
       </ul>
     </nav>
   </header>
-  <main>
+  <main  id="maincontent">
 
   </main>
   <footer>
 
   </footer>
+  <script src="/common/navbar.js"></script>
 </body>
 </html>
