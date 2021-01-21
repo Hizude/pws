@@ -1,0 +1,24 @@
+{
+  "name": "pws",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build-css": "tailwindcss build src/styles.css -o common/styles.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Hizude/pws.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Hizude/pws/issues"
+  },
+  "homepage": "https://github.com/Hizude/pws#readme",
+  "dependencies": {
+    "autoprefixer": "^10.2.3",
+    "tailwindcss": "^2.0.2"
+  }
+}
