@@ -8,15 +8,16 @@
 </head>
 <body class="text-white font-sans bg-black">
   <header>
-    <a href="#maincontent" class="block bg-yellow-700 text-2xl bg-yellow-700 sr-only focus:not-sr-only" tabindex="1">Ga naar inhoud</a>
-    <div id="accessibility-controls" class="block bg-yellow-500">
+    <a href="#maincontent" class="block bg-gradient-to-r from-yellow-700 to-yellow-500 text-2xl font-bold sr-only focus:not-sr-only" tabindex="1">Ga naar inhoud</a>
+    <div id="accessibility-controls" class="block bg-gradient-to-r from-purple-900 to-purple-700">
       <ul class="flex justify-center">
+        <li class="mx-1 my-auto text-sm"><span>Zoom</span></li>
         <li class="mx-3 cursor-pointer"><span id="zoom-reset" class="align-middle" tabindex="2" title="Reset zoom">A</span></li>
         <li class="mx-3 cursor-pointer text-lg"><span id="zoom-large" tabindex="2" title="Zoom in">A</span></li>
         <li class="mx-3 cursor-pointer text-xl"><span id="zoom-larger" tabindex="3" title="Zoom in again">A</span></li>
       </ul>
     </div>
-    <nav class="bg-indigo-700 py-2 md:py-1 md:flex md:flex-row">
+    <nav class="bg-gradient-to-r from-indigo-700 to-indigo-500 py-2 md:py-1 md:flex md:flex-row">
       <div class="px-6 flex justify-between items-center">
         <div id="logo">
           <a href="#"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" width="4em" height="4em" style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);" preserveAspectRatio="xMidYMid meet" viewBox="0 0 64 64"><path d="M32 7C15.434 7 2 24.271 2 30.232s13.434 23.232 30 23.232c4.615 0 8.985-1.343 12.892-3.405L55.58 57V41.686c4.017-4.4 6.42-8.935 6.42-11.454C62 24.271 48.568 7 32 7zm0 38.384c-8.283 0-15-6.784-15-15.151c0-8.369 6.717-15.151 15-15.151c8.285 0 15 6.782 15 15.151c0 8.367-6.715 15.151-15 15.151z" fill="white"/><path d="M32 21.142c-.975 0-1.911.161-2.79.45A5.038 5.038 0 0 1 31 25.435c0 2.788-2.238 5.05-5 5.05a4.925 4.925 0 0 1-2.963-1.002a9.755 9.755 0 0 0-.037.749c0 5.02 4.029 9.091 9 9.091s9-4.071 9-9.091c0-5.021-4.029-9.09-9-9.09" fill="orange"/></svg>
@@ -54,13 +55,38 @@
       </ul>
     </nav>
   </header>
-  <main  id="maincontent">
-    <section id="introduction" class="w-11/12 bg-yellow-900 bg-opacity-30 mt-24 items-center mx-auto flex flex-col">
+  <main id="maincontent" class="w-11/12 mt-24 mx-auto">
+    <section id="introduction" class="items-center flex flex-col">
       <h1 class="text-blue-300 text-3xl font-bold">Toegankelijkheid van websites</h1>
       <h2 class="text-xl mt-6">Profielwerkstuk 5H 2020/21</h2>
       <img src="img/undraw_pedestrian_crossing_l6jv 1.svg" class="mt-12" alt="">
     </section>
-    <section id="page-choices"></section>
+    <section id="page-choices" class="flex flex-col items-center">
+      <h3 class="text-2xl mt-64">Over deze website</h3>
+      <h4 class="mt-4">Deze website is het praktische gedeelte van ons profielwerkstuk. Op deze website is het volgende te vinden:</h4>
+      <div id="visit-page-containers" class="flex flex-col text-center lg:flex-row lg:gap-8">
+        <div class="bg-blue-700 my-16 py-8 px-12 bg-gradient-to-r from-red-600 to-red-500 lg:text-sm lg:w-full lg:px-8">
+          <h4 class="text-2xl font-bold mb-1">Home</h4>
+          <p>De huidige pagina. Deze pagina geeft een uitleg over wat er te vinden is op deze website.</p>
+          <a href="index.html" class="inline-block bg-gradient-to-r from-indigo-900 to-indigo-700 hover:from-indigo-700 hover:to-indigo-900 px-4 py-2 ">Ga naar Home</a>
+        </div>
+        <div class="bg-blue-700 my-16 py-8 px-12 bg-gradient-to-r from-red-600 to-red-500 lg:text-sm lg:w-full lg:px-8">
+          <h4 class="text-2xl font-bold mb-1">Resultaten</h4>
+          <p>Deze pagina geeft een overzicht van de resultaten van ons onderzoek.</p>
+          <a href="pages/html/resultaten.html" class="inline-block bg-gradient-to-r from-indigo-900 to-indigo-700 hover:from-indigo-700 hover:to-indigo-900 px-3 py-2">Ga naar Resultaten</a>
+        </div>
+        <div class="bg-blue-700 my-16 py-8 px-12 bg-gradient-to-r from-red-600 to-red-500 lg:text-sm lg:w-full lg:px-8">
+          <h4 class="text-2xl font-bold mb-1">Verslag</h4>
+          <p>Op deze pagina kun je ons gehele verslag lezen. Ook kun je hier het verslag als .pdf of .docx downloaden.</p>
+          <a href="pages/html/verslag.html" class="inline-block bg-gradient-to-r from-indigo-900 to-indigo-700 hover:from-indigo-700 hover:to-indigo-900 px-4 py-2 ">Ga naar Verslag</a>
+        </div>
+        <div class="bg-blue-700 my-16 py-8 px-12 bg-gradient-to-r from-red-600 to-red-500 lg:text-sm lg:w-full lg:px-8">
+          <h4 class="text-2xl font-bold mb-1">Toegankelijkheid</h4>
+          <p>De eisen aan toegankelijkheid waar deze website aan voldoet.</p>
+          <a href="pages/html/toegankelijkheid.html" class="inline-block bg-gradient-to-r from-indigo-900 to-indigo-700 hover:from-indigo-700 hover:to-indigo-900 px-4 py-2">Ga naar Toegankelijkheid</a>
+        </div>
+      </div>
+    </section>
   </main>
   <footer>
 
