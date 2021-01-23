@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="nl">
 <head>
   <title>Home | PWS</title>
   <meta charset="UTF-8" />
@@ -8,7 +8,14 @@
 </head>
 <body class="text-white font-sans bg-black">
   <header>
-    <!-- <a href="#maincontent" class="text-2xl bg-yellow-700 sr-only focus:not-sr-only" tabindex="1">Ga naar inhoud</a> -->
+    <a href="#maincontent" class="block bg-yellow-700 text-2xl bg-yellow-700 sr-only focus:not-sr-only" tabindex="1">Ga naar inhoud</a>
+    <div id="accessibility-controls" class="block bg-yellow-500">
+      <ul class="flex justify-center">
+        <li class="mx-3 cursor-pointer"><span id="zoom-reset" class="align-middle" tabindex="2" title="Reset zoom">A</span></li>
+        <li class="mx-3 cursor-pointer text-lg"><span id="zoom-large" tabindex="2" title="Zoom in">A</span></li>
+        <li class="mx-3 cursor-pointer text-xl"><span id="zoom-larger" tabindex="3" title="Zoom in again">A</span></li>
+      </ul>
+    </div>
     <nav class="bg-indigo-700 py-2 md:py-1 md:flex md:flex-row">
       <div class="px-6 flex justify-between items-center">
         <div id="logo">
@@ -20,7 +27,7 @@
         </button>
       </div>
       <ul id="menu" class="hidden text-xl mt-4 flex flex-col items-start md:block md:mt-0 md:flex md:flex-row md:items-center md:text-lg">
-        <li class="w-full px-2 py-2 hover:bg-indigo-900 md:border-b-2 md:ml-6">
+        <li class="w-full px-2 py-2 hover:bg-indigo-900 md:ml-6">
           <a href="index.html" class="flex justify-start items-center">
             <svg class="mr-2" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" width="2em" height="2em" style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);" preserveAspectRatio="xMidYMid meet" viewBox="0 0 1024 1024"><path d="M946.5 505L560.1 118.8l-25.9-25.9a31.5 31.5 0 0 0-44.4 0L77.5 505a63.9 63.9 0 0 0-18.8 46c.4 35.2 29.7 63.3 64.9 63.3h42.5V940h691.8V614.3h43.4c17.1 0 33.2-6.7 45.3-18.8a63.6 63.6 0 0 0 18.7-45.3c0-17-6.7-33.1-18.8-45.2zM568 868H456V664h112v204zm217.9-325.7V868H632V640c0-22.1-17.9-40-40-40H432c-22.1 0-40 17.9-40 40v228H238.1V542.3h-96l370-369.7l23.1 23.1L882 542.3h-96.1z" fill="#FFFFFF"/></svg>
             <span>Home</span>
@@ -48,7 +55,12 @@
     </nav>
   </header>
   <main  id="maincontent">
-
+    <section id="introduction" class="w-11/12 bg-yellow-900 bg-opacity-30 mt-24 items-center mx-auto flex flex-col">
+      <h1 class="text-blue-300 text-3xl font-bold">Toegankelijkheid van websites</h1>
+      <h2 class="text-xl mt-6">Profielwerkstuk 5H 2020/21</h2>
+      <img src="img/undraw_pedestrian_crossing_l6jv 1.svg" class="mt-12" alt="">
+    </section>
+    <section id="page-choices"></section>
   </main>
   <footer>
 
