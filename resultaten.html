@@ -4,8 +4,8 @@
   <title>Resultaten | PWS</title>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link href="/pws/common/styles.css" rel="stylesheet">
-  <!-- <link rel="stylesheet" href="common/styles.css"> -->
+  <!-- <link href="/pws/common/styles.css" rel="stylesheet"> -->
+  <link rel="stylesheet" href="common/styles.css">
 </head>
 <body class="text-white font-sans bg-black">
   <header>
@@ -21,7 +21,7 @@
     <nav class="bg-gradient-to-r from-indigo-700 to-indigo-500 py-2 md:py-1 md:flex md:flex-row">
       <div class="px-6 flex justify-between items-center">
         <div id="logo">
-          <a href="#"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" width="4em" height="4em" style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);" preserveAspectRatio="xMidYMid meet" viewBox="0 0 64 64"><path d="M32 7C15.434 7 2 24.271 2 30.232s13.434 23.232 30 23.232c4.615 0 8.985-1.343 12.892-3.405L55.58 57V41.686c4.017-4.4 6.42-8.935 6.42-11.454C62 24.271 48.568 7 32 7zm0 38.384c-8.283 0-15-6.784-15-15.151c0-8.369 6.717-15.151 15-15.151c8.285 0 15 6.782 15 15.151c0 8.367-6.715 15.151-15 15.151z" fill="white"/><path d="M32 21.142c-.975 0-1.911.161-2.79.45A5.038 5.038 0 0 1 31 25.435c0 2.788-2.238 5.05-5 5.05a4.925 4.925 0 0 1-2.963-1.002a9.755 9.755 0 0 0-.037.749c0 5.02 4.029 9.091 9 9.091s9-4.071 9-9.091c0-5.021-4.029-9.09-9-9.09" fill="orange"/></svg>
+          <a href="https://hizude.github.io/pws"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" width="4em" height="4em" style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);" preserveAspectRatio="xMidYMid meet" viewBox="0 0 64 64"><path d="M32 7C15.434 7 2 24.271 2 30.232s13.434 23.232 30 23.232c4.615 0 8.985-1.343 12.892-3.405L55.58 57V41.686c4.017-4.4 6.42-8.935 6.42-11.454C62 24.271 48.568 7 32 7zm0 38.384c-8.283 0-15-6.784-15-15.151c0-8.369 6.717-15.151 15-15.151c8.285 0 15 6.782 15 15.151c0 8.367-6.715 15.151-15 15.151z" fill="white"/><path d="M32 21.142c-.975 0-1.911.161-2.79.45A5.038 5.038 0 0 1 31 25.435c0 2.788-2.238 5.05-5 5.05a4.925 4.925 0 0 1-2.963-1.002a9.755 9.755 0 0 0-.037.749c0 5.02 4.029 9.091 9 9.091s9-4.071 9-9.091c0-5.021-4.029-9.09-9-9.09" fill="orange"/></svg>
           </a>
         </div>
         <button id="burger" class="cursor-pointer md:hidden" >
@@ -63,16 +63,16 @@
     </section>
     <section id="results">
       <div id="tabels">
-        <h2 class="italic">Resultaten in tabellen</h2>
-        <button class="accordion flex items-center w-full h-12 mt-2 bg-indigo-800 hover:bg-indigo-900 font-bold pl-1 text-lg cursor-pointer text-left" role="button"><span class="arrow"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" width="2em" height="2em" style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);" preserveAspectRatio="xMidYMid meet" viewBox="0 0 15 15"><g fill="none"><path d="M4 6h7l-3.5 4.5L4 6z" fill="#FFFFFF"/></g></svg></span>Albert Heijn, Yahoo</button>
+        <h2 class="italic text-lg lg:text-xl">Resultaten in tabellen</h2>
+        <button class="accordion flex items-center w-full mx-auto h-12 mt-2 bg-indigo-800 hover:bg-indigo-900 font-bold pl-1 text-lg cursor-pointer text-left" role="button"><span class="arrow"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" width="2em" height="2em" style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);" preserveAspectRatio="xMidYMid meet" viewBox="0 0 15 15"><g fill="none"><path d="M4 6h7l-3.5 4.5L4 6z" fill="#FFFFFF"/></g></svg></span>Albert Heijn, Yahoo</button>
           <div class="panel hidden">
-            <table class="bg-indigo-700 table-fixed lg:text-lg">
+            <table class="bg-indigo-700 table-fixed mx-auto w-full lg:text-lg">
               <thead>
                 <tr>
-                  <th class="w-1/8">#</th>
-                  <th class="w-5/8">Criterium</th>
-                  <th class="w-1/8">AH</th>
-                  <th class="w-1/8">Yahoo</th>
+                  <th class="w-1/12">#</th>
+                  <th class="w-3/8">Criterium</th>
+                  <th class="w-4/12">AH</th>
+                  <th class="w-4/12">Yahoo</th>
                 </tr>
               </thead>
               <tbody>
@@ -90,112 +90,106 @@
                 </tr>
                 <tr>
                   <td>3</td>
-                  <td>Voor audio en video zijn ondertitels, bijschriften of geschreven transcripties beschikbaar</td>
-                  <td>Ja</td>
-                  <td>Ja</td>
-                </tr>
-                <tr>
-                  <td>4</td>
                   <td>Audio en video kunnen door gebruikers worden onderbroken of gestopt</td>
                   <td>Ja</td>
                   <td>Ja</td>
                 </tr>
                 <tr>
-                  <td>5</td>
+                  <td>4</td>
                   <td>Er is een sterk kleurcontrast tussen tekst en achtergrond</td>
-                  <td>Ja</td>
-                  <td>Ja</td>
+                  <td>Nee</td>
+                  <td>Nee</td>
                 </tr>
                 <tr>
-                  <td>6</td>
+                  <td>5</td>
                   <td>Kleur wordt niet gebruikt als prompt of om informatie over te brengen</td>
                   <td>Ja</td>
                   <td>Ja</td>
                 </tr>
                 <tr>
-                  <td>7</td>
+                  <td>6</td>
                   <td>Tekst kan door de gebruiker worden vergroot en verkleind</td>
                   <td>Ja</td>
                   <td>Ja</td>
                 </tr>
                 <tr>
-                  <td>8</td>
+                  <td>7</td>
                   <td>Links beschrijven waar de link naartoe gaat, niet het url-adres</td>
                   <td>Ja</td>
                   <td>Ja</td>
                 </tr>
                 <tr>
-                  <td>9</td>
+                  <td>8</td>
                   <td>Links naar documenten bevatten het documenttype en de bestandsgrootte</td>
+                  <td>nvt</td>
                   <td>Ja</td>
-                  <td>Ja</td>
+                </tr>
+                <tr>
+                  <td>9</td>
+                  <td>Alle documenten zijn beschikbaar in een toegankelijke versie (dwz in zowel Word-document als pdf)</td>
+                  <td>nvt</td>
+                  <td>nvt</td>
                 </tr>
                 <tr>
                   <td>10</td>
-                  <td>Alle documenten zijn beschikbaar in een toegankelijke versie (dwz in zowel Word-document als pdf)</td>
+                  <td>Alle onderdelen van de website zijn toegankelijk met alleen het toetsenbord</td>
                   <td>Ja</td>
-                  <td>Ja</td>
+                  <td>Nee</td>
                 </tr>
                 <tr>
                   <td>11</td>
-                  <td>Alle onderdelen van de website zijn alleen toegankelijk met het toetsenbord</td>
-                  <td>Ja</td>
-                  <td>Ja</td>
-                </tr>
-                <tr>
-                  <td>12</td>
                   <td>Er is meer dan één manier om informatie te vinden (zoeken / sitemap / navigatie)</td>
                   <td>Ja</td>
                   <td>Ja</td>
                 </tr>
                 <tr>
-                  <td>13</td>
+                  <td>12</td>
                   <td>Er worden labels weergegeven naast velden waarvoor de gebruiker informatie moet invoeren</td>
                   <td>Ja</td>
                   <td>Ja</td>
                 </tr>
                 <tr>
-                  <td>14</td>
+                  <td>13</td>
                   <td>Er zijn geen tijdslimieten voor gebruikers</td>
                   <td>Ja</td>
                   <td>Ja</td>
                 </tr>
                 <tr>
-                  <td>15</td>
+                  <td>14</td>
                   <td>Pagina's bevatten geen snel knipperende pagina's (dwz meer dan drie keer knipperen per seconde)</td>
                   <td>Ja</td>
                   <td>Ja</td>
                 </tr>
                 <tr>
+                  <td>15</td>
+                  <td>De bovenkant van elke pagina met navigatielinks heeft een link "navigatie overslaan" (of vergelijkbaar)</td>
+                  <td>Ja</td>
+                  <td>Nee</td>
+                </tr>
+                <tr>
                   <td>16</td>
-                  <td>Heeft de bovenkant van elke pagina met navigatielinks een link "navigatie overslaan"?</td>
-                  <td>Ja</td>
-                  <td>Ja</td>
+                  <td>‘Toegankelijkheid’ score van Lighthouse analyse</td>
+                  <td class="bg-red-900">63</td>
+                  <td class="bg-yellow-800">81</td>
                 </tr>
                 <tr>
                   <td>17</td>
-                  <td>Als de website online formulieren heeft, beschrijft de standaardinstelling in vervolgkeuzelijsten de informatie die wordt gevraagd in plaats van een antwoordoptie weer te geven (bijv. "Uw leeftijd" in plaats van "18 - 21")?</td>
-                  <td>Ja</td>
-                  <td>Ja</td>
-                </tr>
-                <tr>
-                  <td>19</td>
-                  <td>‘Accessibility’ score van Lighthouse analyse (Google Chrome</td>
-                  <td>0</td>
-                  <td>Ja</td>
+                  <td>% van criteria die worden voldaan</td>
+                  <td class="bg-green-900">92,3%</td>
+                  <td class="bg-yellow-900">78,6%</td>
                 </tr>
               </tbody>
             </table>
           </div>
         <button class="accordion flex items-center w-full h-12 mt-6 bg-indigo-800 hover:bg-indigo-900 font-bold pl-1 text-lg cursor-pointer text-left" role="button"><span class="arrow"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" width="2em" height="2em" style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);" preserveAspectRatio="xMidYMid meet" viewBox="0 0 15 15"><g fill="none"><path d="M4 6h7l-3.5 4.5L4 6z" fill="#FFFFFF"/></g></svg></span>Amazon, PCC</button>
         <div class="panel hidden">
-        <table class="mt-2 table-fixed lg:text-lg">
+        <table class="mt-2 table-fixed w-full mx-auto lg:text-lg">
           <thead>
             <tr>
-              <th class="w-1/8">#</th>
-              <th class="w-5/8">Criterium</th>
-              <th class="w-1/8">Amazon</th>
-              <th class="w-1/8">PCC</th>
+              <th class="w-1/12">#</th>
+              <th class="w-3/8">Criterium</th>
+              <th class="w-4/12">Amazon</th>
+              <th class="w-4/12">PCC</th>
             </tr>
           </thead>
           <tbody>
@@ -203,245 +197,233 @@
               <td>1</td>
               <td>Afbeeldingen hebben alt tekst, tenzij ze puur voor decoratie dienen</td>
               <td>Ja</td>
-              <td>Ja</td>
+              <td>Nee</td>
             </tr>
             <tr>
               <td>2</td>
               <td>Afbeeldingen worden niet gebruikt als tekst, tenzij de afbeelding deel uitmaakt van een logo of merknaam</td>
-              <td>Ja</td>
+              <td>Nee</td>
               <td>Ja</td>
             </tr>
             <tr>
               <td>3</td>
-              <td>Voor audio en video zijn ondertitels, bijschriften of geschreven transcripties beschikbaar</td>
-              <td>Ja</td>
-              <td>Ja</td>
-            </tr>
-            <tr>
-              <td>4</td>
               <td>Audio en video kunnen door gebruikers worden onderbroken of gestopt</td>
               <td>Ja</td>
               <td>Ja</td>
             </tr>
             <tr>
-              <td>5</td>
+              <td>4</td>
               <td>Er is een sterk kleurcontrast tussen tekst en achtergrond</td>
               <td>Ja</td>
-              <td>Ja</td>
+              <td>Nee</td>
             </tr>
             <tr>
-              <td>6</td>
+              <td>5</td>
               <td>Kleur wordt niet gebruikt als prompt of om informatie over te brengen</td>
               <td>Ja</td>
               <td>Ja</td>
             </tr>
             <tr>
-              <td>7</td>
+              <td>6</td>
               <td>Tekst kan door de gebruiker worden vergroot en verkleind</td>
               <td>Ja</td>
               <td>Ja</td>
             </tr>
             <tr>
-              <td>8</td>
+              <td>7</td>
               <td>Links beschrijven waar de link naartoe gaat, niet het url-adres</td>
               <td>Ja</td>
               <td>Ja</td>
             </tr>
             <tr>
-              <td>9</td>
+              <td>8</td>
               <td>Links naar documenten bevatten het documenttype en de bestandsgrootte</td>
               <td>Ja</td>
-              <td>Ja</td>
+              <td>Nee</td>
+            </tr>
+            <tr>
+              <td>9</td>
+              <td>Alle documenten zijn beschikbaar in een toegankelijke versie (dwz in zowel Word-document als pdf)</td>
+              <td>Nee</td>
+              <td>Nee</td>
             </tr>
             <tr>
               <td>10</td>
-              <td>Alle documenten zijn beschikbaar in een toegankelijke versie (dwz in zowel Word-document als pdf)</td>
+              <td>Alle onderdelen van de website zijn toegankelijk met alleen het toetsenbord</td>
               <td>Ja</td>
               <td>Ja</td>
             </tr>
             <tr>
               <td>11</td>
-              <td>Alle onderdelen van de website zijn alleen toegankelijk met het toetsenbord</td>
-              <td>Ja</td>
-              <td>Ja</td>
-            </tr>
-            <tr>
-              <td>12</td>
               <td>Er is meer dan één manier om informatie te vinden (zoeken / sitemap / navigatie)</td>
               <td>Ja</td>
               <td>Ja</td>
             </tr>
             <tr>
-              <td>13</td>
+              <td>12</td>
               <td>Er worden labels weergegeven naast velden waarvoor de gebruiker informatie moet invoeren</td>
               <td>Ja</td>
               <td>Ja</td>
             </tr>
             <tr>
-              <td>14</td>
+              <td>13</td>
               <td>Er zijn geen tijdslimieten voor gebruikers</td>
               <td>Ja</td>
               <td>Ja</td>
             </tr>
             <tr>
-              <td>15</td>
+              <td>14</td>
               <td>Pagina's bevatten geen snel knipperende pagina's (dwz meer dan drie keer knipperen per seconde)</td>
               <td>Ja</td>
               <td>Ja</td>
             </tr>
             <tr>
+              <td>15</td>
+              <td>De bovenkant van elke pagina met navigatielinks heeft een link "navigatie overslaan" (of vergelijkbaar)</td>
+              <td>Ja</td>
+              <td>Nee</td>
+            </tr>
+            <tr>
               <td>16</td>
-              <td>Heeft de bovenkant van elke pagina met navigatielinks een link "navigatie overslaan"?</td>
-              <td>Ja</td>
-              <td>Ja</td>
+              <td>‘Toegankelijkheid’ score van Lighthouse analyse</td>
+              <td class="bg-green-900">98</td>
+              <td class="bg-yellow-900">70</td>
             </tr>
             <tr>
               <td>17</td>
-              <td>Als de website online formulieren heeft, beschrijft de standaardinstelling in vervolgkeuzelijsten de informatie die wordt gevraagd in plaats van een antwoordoptie weer te geven (bijv. "Uw leeftijd" in plaats van "18 - 21")?</td>
-              <td>Ja</td>
-              <td>Ja</td>
-            </tr>
-            <tr>
-              <td>19</td>
-              <td>‘Accessibility’ score van Lighthouse analyse (Google Chrome</td>
-              <td>0</td>
-              <td>Ja</td>
+              <td>% van criteria die worden voldaan</td>
+              <td class="bg-yellow-800">86,7%</td>
+              <td class="bg-red-900">66,7%</td>
             </tr>
           </tbody>
         </table>
         </div>
         <button class="accordion flex items-center w-full h-12 mt-6 bg-indigo-800 hover:bg-indigo-900 font-bold pl-1 text-lg cursor-pointer text-left" role="button"><span class="arrow"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" width="2em" height="2em" style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);" preserveAspectRatio="xMidYMid meet" viewBox="0 0 15 15"><g fill="none"><path d="M4 6h7l-3.5 4.5L4 6z" fill="#FFFFFF"/></g></svg></span>InformaticaBaas, Facebook</button>
         <div class="panel hidden">
-        <table class="mt-2 table-fixed lg:text-lg">
+        <table class="mt-2 table-fixed w-full mx-auto lg:text-lg">
           <thead>
             <tr>
-              <th class="w-1/8">#</th>
-              <th class="w-5/8">Criterium</th>
-              <th class="w-1/8">InformaticaBaas</th>
-              <th class="w-1/8">Facebook</th>
+              <th class="w-1/12">#</th>
+              <th class="w-3/8">Criterium</th>
+              <th class="w-4/12">InformaticaBaas</th>
+              <th class="w-4/12">Facebook</th>
             </tr>
           </thead>
           <tbody>
             <tr>
               <td>1</td>
               <td>Afbeeldingen hebben alt tekst, tenzij ze puur voor decoratie dienen</td>
-              <td>Ja</td>
-              <td>Ja</td>
+              <td>Nee</td>
+              <td>Nee</td>
             </tr>
             <tr>
               <td>2</td>
               <td>Afbeeldingen worden niet gebruikt als tekst, tenzij de afbeelding deel uitmaakt van een logo of merknaam</td>
-              <td>Ja</td>
+              <td>Nee</td>
               <td>Ja</td>
             </tr>
             <tr>
               <td>3</td>
-              <td>Voor audio en video zijn ondertitels, bijschriften of geschreven transcripties beschikbaar</td>
-              <td>Ja</td>
-              <td>Ja</td>
-            </tr>
-            <tr>
-              <td>4</td>
               <td>Audio en video kunnen door gebruikers worden onderbroken of gestopt</td>
               <td>Ja</td>
               <td>Ja</td>
             </tr>
             <tr>
-              <td>5</td>
+              <td>4</td>
               <td>Er is een sterk kleurcontrast tussen tekst en achtergrond</td>
-              <td>Ja</td>
-              <td>Ja</td>
+              <td>Nee</td>
+              <td>Nee</td>
             </tr>
             <tr>
-              <td>6</td>
+              <td>5</td>
               <td>Kleur wordt niet gebruikt als prompt of om informatie over te brengen</td>
               <td>Ja</td>
               <td>Ja</td>
             </tr>
             <tr>
-              <td>7</td>
+              <td>6</td>
               <td>Tekst kan door de gebruiker worden vergroot en verkleind</td>
               <td>Ja</td>
               <td>Ja</td>
             </tr>
             <tr>
-              <td>8</td>
+              <td>7</td>
               <td>Links beschrijven waar de link naartoe gaat, niet het url-adres</td>
               <td>Ja</td>
               <td>Ja</td>
             </tr>
             <tr>
-              <td>9</td>
+              <td>8</td>
               <td>Links naar documenten bevatten het documenttype en de bestandsgrootte</td>
-              <td>Ja</td>
+              <td>Nee</td>
+              <td>Nee</td>
+            </tr>
+            <tr>
+              <td>9</td>
+              <td>Alle documenten zijn beschikbaar in een toegankelijke versie (dwz in zowel Word-document als pdf)</td>
+              <td>Nee</td>
               <td>Ja</td>
             </tr>
             <tr>
               <td>10</td>
-              <td>Alle documenten zijn beschikbaar in een toegankelijke versie (dwz in zowel Word-document als pdf)</td>
+              <td>Alle onderdelen van de website zijn toegankelijk met alleen het toetsenbord</td>
               <td>Ja</td>
               <td>Ja</td>
             </tr>
             <tr>
               <td>11</td>
-              <td>Alle onderdelen van de website zijn alleen toegankelijk met het toetsenbord</td>
-              <td>Ja</td>
-              <td>Ja</td>
-            </tr>
-            <tr>
-              <td>12</td>
               <td>Er is meer dan één manier om informatie te vinden (zoeken / sitemap / navigatie)</td>
               <td>Ja</td>
               <td>Ja</td>
             </tr>
             <tr>
-              <td>13</td>
+              <td>12</td>
               <td>Er worden labels weergegeven naast velden waarvoor de gebruiker informatie moet invoeren</td>
               <td>Ja</td>
               <td>Ja</td>
             </tr>
             <tr>
-              <td>14</td>
+              <td>13</td>
               <td>Er zijn geen tijdslimieten voor gebruikers</td>
               <td>Ja</td>
               <td>Ja</td>
             </tr>
             <tr>
-              <td>15</td>
+              <td>14</td>
               <td>Pagina's bevatten geen snel knipperende pagina's (dwz meer dan drie keer knipperen per seconde)</td>
               <td>Ja</td>
               <td>Ja</td>
             </tr>
             <tr>
+              <td>15</td>
+              <td>De bovenkant van elke pagina met navigatielinks heeft een link "navigatie overslaan" (of vergelijkbaar)</td>
+              <td>Ja</td>
+              <td>Ja</td>
+            </tr>
+            <tr>
               <td>16</td>
-              <td>Heeft de bovenkant van elke pagina met navigatielinks een link "navigatie overslaan"?</td>
-              <td>Ja</td>
-              <td>Ja</td>
+              <td>‘Toegankelijkheid’ score van Lighthouse analyse</td>
+              <td class="bg-green-900">93</td>
+              <td class="bg-green-900">91</td>
             </tr>
             <tr>
               <td>17</td>
-              <td>Als de website online formulieren heeft, beschrijft de standaardinstelling in vervolgkeuzelijsten de informatie die wordt gevraagd in plaats van een antwoordoptie weer te geven (bijv. "Uw leeftijd" in plaats van "18 - 21")?</td>
-              <td>Ja</td>
-              <td>Ja</td>
-            </tr>
-            <tr>
-              <td>19</td>
-              <td>‘Accessibility’ score van Lighthouse analyse (Google Chrome</td>
-              <td>0</td>
-              <td>Ja</td>
+              <td>% van criteria die worden voldaan</td>
+              <td class="bg-red-900">66,7%</td>
+              <td class="bg-yellow-800">81,3%</td>
             </tr>
           </tbody>
         </table>
       </div>
         <button class="accordion flex items-center w-full h-12 mt-6 bg-indigo-800 hover:bg-indigo-900 font-bold pl-1 text-lg cursor-pointer text-left" role="button"><span class="arrow"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" width="2em" height="2em" style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);" preserveAspectRatio="xMidYMid meet" viewBox="0 0 15 15"><g fill="none"><path d="M4 6h7l-3.5 4.5L4 6z" fill="#FFFFFF"/></g></svg></span>Google, YouTube</button>
         <div class="panel hidden">
-        <table class="mt-2 table-fixed lg:text-lg">
+        <table class="mt-2 table-fixed w-full mx-auto lg:text-lg">
           <thead>
             <tr>
-              <th class="w-1/8">#</th>
-              <th class="w-5/8">Criterium</th>
-              <th class="w-1/8">Google</th>
-              <th class="w-1/8">YouTube</th>
+              <th class="w-1/12">#</th>
+              <th class="w-3/8">Criterium</th>
+              <th class="w-4/12">Google</th>
+              <th class="w-4/12">YouTube</th>
             </tr>
           </thead>
           <tbody>
@@ -459,112 +441,106 @@
             </tr>
             <tr>
               <td>3</td>
-              <td>Voor audio en video zijn ondertitels, bijschriften of geschreven transcripties beschikbaar</td>
-              <td>Ja</td>
-              <td>Ja</td>
-            </tr>
-            <tr>
-              <td>4</td>
               <td>Audio en video kunnen door gebruikers worden onderbroken of gestopt</td>
               <td>Ja</td>
               <td>Ja</td>
             </tr>
             <tr>
-              <td>5</td>
+              <td>4</td>
               <td>Er is een sterk kleurcontrast tussen tekst en achtergrond</td>
-              <td>Ja</td>
+              <td>Nee</td>
               <td>Ja</td>
             </tr>
             <tr>
-              <td>6</td>
+              <td>5</td>
               <td>Kleur wordt niet gebruikt als prompt of om informatie over te brengen</td>
               <td>Ja</td>
               <td>Ja</td>
             </tr>
             <tr>
-              <td>7</td>
+              <td>6</td>
               <td>Tekst kan door de gebruiker worden vergroot en verkleind</td>
               <td>Ja</td>
               <td>Ja</td>
             </tr>
             <tr>
-              <td>8</td>
+              <td>7</td>
               <td>Links beschrijven waar de link naartoe gaat, niet het url-adres</td>
               <td>Ja</td>
               <td>Ja</td>
             </tr>
             <tr>
-              <td>9</td>
+              <td>8</td>
               <td>Links naar documenten bevatten het documenttype en de bestandsgrootte</td>
               <td>Ja</td>
+              <td>nvt</td>
+            </tr>
+            <tr>
+              <td>9</td>
+              <td>Alle documenten zijn beschikbaar in een toegankelijke versie (dwz in zowel Word-document als pdf)</td>
               <td>Ja</td>
+              <td>nvt</td>
             </tr>
             <tr>
               <td>10</td>
-              <td>Alle documenten zijn beschikbaar in een toegankelijke versie (dwz in zowel Word-document als pdf)</td>
+              <td>Alle onderdelen van de website zijn toegankelijk met alleen het toetsenbord</td>
               <td>Ja</td>
               <td>Ja</td>
             </tr>
             <tr>
               <td>11</td>
-              <td>Alle onderdelen van de website zijn alleen toegankelijk met het toetsenbord</td>
-              <td>Ja</td>
-              <td>Ja</td>
-            </tr>
-            <tr>
-              <td>12</td>
               <td>Er is meer dan één manier om informatie te vinden (zoeken / sitemap / navigatie)</td>
               <td>Ja</td>
               <td>Ja</td>
             </tr>
             <tr>
-              <td>13</td>
+              <td>12</td>
               <td>Er worden labels weergegeven naast velden waarvoor de gebruiker informatie moet invoeren</td>
               <td>Ja</td>
               <td>Ja</td>
             </tr>
             <tr>
-              <td>14</td>
+              <td>13</td>
               <td>Er zijn geen tijdslimieten voor gebruikers</td>
               <td>Ja</td>
               <td>Ja</td>
             </tr>
             <tr>
-              <td>15</td>
+              <td>14</td>
               <td>Pagina's bevatten geen snel knipperende pagina's (dwz meer dan drie keer knipperen per seconde)</td>
               <td>Ja</td>
               <td>Ja</td>
             </tr>
             <tr>
+              <td>15</td>
+              <td>De bovenkant van elke pagina met navigatielinks heeft een link "navigatie overslaan" (of vergelijkbaar)</td>
+              <td>Ja</td>
+              <td>Ja</td>
+            </tr>
+            <tr>
               <td>16</td>
-              <td>Heeft de bovenkant van elke pagina met navigatielinks een link "navigatie overslaan"?</td>
-              <td>Ja</td>
-              <td>Ja</td>
+              <td>‘Toegankelijkheid’ score van Lighthouse analyse</td>
+              <td class="bg-yellow-800">87</td>
+              <td class="bg-yellow-800">86</td>
             </tr>
             <tr>
               <td>17</td>
-              <td>Als de website online formulieren heeft, beschrijft de standaardinstelling in vervolgkeuzelijsten de informatie die wordt gevraagd in plaats van een antwoordoptie weer te geven (bijv. "Uw leeftijd" in plaats van "18 - 21")?</td>
-              <td>Ja</td>
-              <td>Ja</td>
-            </tr>
-            <tr>
-              <td>19</td>
-              <td>‘Accessibility’ score van Lighthouse analyse (Google Chrome</td>
-              <td>0</td>
-              <td>Ja</td>
+              <td>% van criteria die worden voldaan</td>
+              <td class="bg-green-900">93,3%</td>
+              <td class="bg-green-900">100%</td>
             </tr>
           </tbody>
         </table>
         </div>
         <button class="accordion flex items-center w-full h-12 mt-6 bg-indigo-800 hover:bg-indigo-900 font-bold pl-1 text-lg cursor-pointer text-left" role="button"><span class="arrow"><svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" aria-hidden="true" focusable="false" width="2em" height="2em" style="-ms-transform: rotate(360deg); -webkit-transform: rotate(360deg); transform: rotate(360deg);" preserveAspectRatio="xMidYMid meet" viewBox="0 0 15 15"><g fill="none"><path d="M4 6h7l-3.5 4.5L4 6z" fill="#FFFFFF"/></g></svg></span>Magister, ASN</button>
         <div class="panel hidden">
-        <table class="mt-2 table-fixed lg:text-lg">
+        <table class="mt-2 table-fixed w-full mx-auto lg:text-lg">
           <thead>
             <tr>
-              <th class="w-1/8">#</th>
-              <th class="w-5/8">Criterium</th>
-              <th class="w-1/8">Magister</th>
-              <th class="w-1/8">ASN bank</th>
+              <th class="w-1/12">#</th>
+              <th class="w-3/8">Criterium</th>
+              <th class="w-4/12">Magister</th>
+              <th class="w-4/12">ASN bank</th>
             </tr>
           </thead>
           <tbody>
@@ -582,221 +558,340 @@
             </tr>
             <tr>
               <td>3</td>
-              <td>Voor audio en video zijn ondertitels, bijschriften of geschreven transcripties beschikbaar</td>
-              <td>Ja</td>
-              <td>Ja</td>
+              <td>Audio en video kunnen door gebruikers worden onderbroken of gestopt</td>
+              <td>nvt</td>
+              <td>nvt</td>
             </tr>
             <tr>
               <td>4</td>
-              <td>Audio en video kunnen door gebruikers worden onderbroken of gestopt</td>
-              <td>Ja</td>
-              <td>Ja</td>
+              <td>Er is een sterk kleurcontrast tussen tekst en achtergrond</td>
+              <td>Nee</td>
+              <td>Nee</td>
             </tr>
             <tr>
               <td>5</td>
-              <td>Er is een sterk kleurcontrast tussen tekst en achtergrond</td>
-              <td>Ja</td>
+              <td>Kleur wordt niet gebruikt als prompt of om informatie over te brengen</td>
+              <td>Nee</td>
               <td>Ja</td>
             </tr>
             <tr>
               <td>6</td>
-              <td>Kleur wordt niet gebruikt als prompt of om informatie over te brengen</td>
-              <td>Ja</td>
-              <td>Ja</td>
-            </tr>
-            <tr>
-              <td>7</td>
               <td>Tekst kan door de gebruiker worden vergroot en verkleind</td>
               <td>Ja</td>
               <td>Ja</td>
             </tr>
             <tr>
-              <td>8</td>
+              <td>7</td>
               <td>Links beschrijven waar de link naartoe gaat, niet het url-adres</td>
               <td>Ja</td>
               <td>Ja</td>
             </tr>
             <tr>
-              <td>9</td>
+              <td>8</td>
               <td>Links naar documenten bevatten het documenttype en de bestandsgrootte</td>
               <td>Ja</td>
-              <td>Ja</td>
+              <td>nvt</td>
+            </tr>
+            <tr>
+              <td>9</td>
+              <td>Alle documenten zijn beschikbaar in een toegankelijke versie (dwz in zowel Word-document als pdf)</td>
+              <td>nvt</td>
+              <td>nvt</td>
             </tr>
             <tr>
               <td>10</td>
-              <td>Alle documenten zijn beschikbaar in een toegankelijke versie (dwz in zowel Word-document als pdf)</td>
-              <td>Ja</td>
+              <td>Alle onderdelen van de website zijn toegankelijk met alleen het toetsenbord</td>
+              <td>Nee</td>
               <td>Ja</td>
             </tr>
             <tr>
               <td>11</td>
-              <td>Alle onderdelen van de website zijn alleen toegankelijk met het toetsenbord</td>
-              <td>Ja</td>
+              <td>Er is meer dan één manier om informatie te vinden (zoeken / sitemap / navigatie)</td>
+              <td>Nee</td>
               <td>Ja</td>
             </tr>
             <tr>
               <td>12</td>
-              <td>Er is meer dan één manier om informatie te vinden (zoeken / sitemap / navigatie)</td>
-              <td>Ja</td>
-              <td>Ja</td>
-            </tr>
-            <tr>
-              <td>13</td>
               <td>Er worden labels weergegeven naast velden waarvoor de gebruiker informatie moet invoeren</td>
               <td>Ja</td>
               <td>Ja</td>
             </tr>
             <tr>
-              <td>14</td>
+              <td>13</td>
               <td>Er zijn geen tijdslimieten voor gebruikers</td>
               <td>Ja</td>
               <td>Ja</td>
             </tr>
             <tr>
-              <td>15</td>
+              <td>14</td>
               <td>Pagina's bevatten geen snel knipperende pagina's (dwz meer dan drie keer knipperen per seconde)</td>
               <td>Ja</td>
               <td>Ja</td>
             </tr>
             <tr>
+              <td>15</td>
+              <td>De bovenkant van elke pagina met navigatielinks heeft een link "navigatie overslaan" (of vergelijkbaar)</td>
+              <td>Nee</td>
+              <td>Ja</td>
+            </tr>
+            <tr>
               <td>16</td>
-              <td>Heeft de bovenkant van elke pagina met navigatielinks een link "navigatie overslaan"?</td>
-              <td>Ja</td>
-              <td>Ja</td>
+              <td>‘Toegankelijkheid’ score van Lighthouse analyse</td>
+              <td class="bg-red-900">68</td>
+              <td class="bg-yellow-800">86</td>
             </tr>
             <tr>
               <td>17</td>
-              <td>Als de website online formulieren heeft, beschrijft de standaardinstelling in vervolgkeuzelijsten de informatie die wordt gevraagd in plaats van een antwoordoptie weer te geven (bijv. "Uw leeftijd" in plaats van "18 - 21")?</td>
-              <td>Ja</td>
-              <td>Ja</td>
-            </tr>
-            <tr>
-              <td>19</td>
-              <td>‘Accessibility’ score van Lighthouse analyse (Google Chrome</td>
-              <td>0</td>
-              <td>Ja</td>
+              <td>% van criteria die worden voldaan</td>
+              <td class="bg-red-900">61,6%</td>
+              <td class="bg-green-900">91,7%</td>
             </tr>
           </tbody>
         </table>
       </div>
       </div>
       <div id="graphs">
-        <h2 class="italic mt-8">Resultaten in grafieken</h2>
-        <div class="mt-8 flex items-center flex-wrap w-full lg:w-4/5 mx-auto">
+        <h2 class="italic mt-8 text-lg lg:text-xl">Resultaten in grafieken (Lighthouse score)</h2>
+        <div class="mt-8 flex items-center border border-white py-4 flex-wrap w-full lg:w-4/5 mx-auto">
           <div class="flex w-full justify-evenly items-center mb-4">
             <h3 class="w-1/5">AH</h3>
             <div class="flex items-center w-2/5">
               <svg width="227" height="10" viewBox="0 0 227 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <rect x="0.348755" width="155.518" height="10" rx="5" fill="#00CFFF"/>
+              <rect x="0.348755" width="143" height="10" rx="5" fill="#00CFFF"/>
               <rect x="0.5" y="0.5" width="226" height="9" rx="4.5" stroke="white"/>
               </svg>
             </div>
-            <h3 class="ml-4">55%</h3>
+            <h3 class="ml-4">63</h3>
           </div>
           <div class="flex w-full justify-evenly items-center mb-4">
             <h3 class="w-1/5">Yahoo</h3>
             <div class="flex items-center w-2/5">
               <svg width="227" height="10" viewBox="0 0 227 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <rect x="0.348755" width="155.518" height="10" rx="5" fill="#00CFFF"/>
+              <rect x="0.348755" width="184" height="10" rx="5" fill="#00CFFF"/>
               <rect x="0.5" y="0.5" width="226" height="9" rx="4.5" stroke="white"/>
               </svg>
             </div>
-            <h3 class="ml-4">55%</h3>
+            <h3 class="ml-4">81</h3>
           </div>
           <div class="flex w-full justify-evenly items-center mb-4">
             <h3 class="w-1/5">Amazon</h3>
             <div class="flex items-center w-2/5">
               <svg width="227" height="10" viewBox="0 0 227 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <rect x="0.348755" width="155.518" height="10" rx="5" fill="#00CFFF"/>
+              <rect x="0.348755" width="222" height="10" rx="5" fill="#00CFFF"/>
               <rect x="0.5" y="0.5" width="226" height="9" rx="4.5" stroke="white"/>
               </svg>
             </div>
-            <h3 class="ml-4">55%</h3>
+            <h3 class="ml-4">98</h3>
           </div>
           <div class="flex w-full justify-evenly items-center mb-4">
             <h3 class="w-1/5">PCC</h3>
             <div class="flex items-center w-2/5">
               <svg width="227" height="10" viewBox="0 0 227 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <rect x="0.348755" width="155.518" height="10" rx="5" fill="#00CFFF"/>
+              <rect x="0.348755" width="159" height="10" rx="5" fill="#00CFFF"/>
               <rect x="0.5" y="0.5" width="226" height="9" rx="4.5" stroke="white"/>
               </svg>
             </div>
-            <h3 class="ml-4">55%</h3>
+            <h3 class="ml-4">70</h3>
           </div>
           <div class="flex w-full justify-evenly items-center mb-4">
             <h3 class="w-1/5">Inf. Ba.</h3>
             <div class="flex items-center w-2/5">
               <svg width="227" height="10" viewBox="0 0 227 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <rect x="0.348755" width="155.518" height="10" rx="5" fill="#00CFFF"/>
+              <rect x="0.348755" width="211" height="10" rx="5" fill="#00CFFF"/>
               <rect x="0.5" y="0.5" width="226" height="9" rx="4.5" stroke="white"/>
               </svg>
             </div>
-            <h3 class="ml-4">55%</h3>
+            <h3 class="ml-4">93</h3>
           </div>
           <div class="flex w-full justify-evenly items-center mb-4">
             <h3 class="w-1/5">Facebook</h3>
             <div class="flex items-center w-2/5">
               <svg width="227" height="10" viewBox="0 0 227 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <rect x="0.348755" width="155.518" height="10" rx="5" fill="#00CFFF"/>
+              <rect x="0.348755" width="207" height="10" rx="5" fill="#00CFFF"/>
               <rect x="0.5" y="0.5" width="226" height="9" rx="4.5" stroke="white"/>
               </svg>
             </div>
-            <h3 class="ml-4">55%</h3>
+            <h3 class="ml-4">91</h3>
           </div>
           <div class="flex w-full justify-evenly items-center mb-4">
             <h3 class="w-1/5">Google</h3>
             <div class="flex items-center w-2/5">
               <svg width="227" height="10" viewBox="0 0 227 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <rect x="0.348755" width="155.518" height="10" rx="5" fill="#00CFFF"/>
+              <rect x="0.348755" width="197" height="10" rx="5" fill="#00CFFF"/>
               <rect x="0.5" y="0.5" width="226" height="9" rx="4.5" stroke="white"/>
               </svg>
             </div>
-            <h3 class="ml-4">55%</h3>
+            <h3 class="ml-4">87</h3>
           </div>
           <div class="flex w-full justify-evenly items-center mb-4">
             <h3 class="w-1/5">YouTube</h3>
             <div class="flex items-center w-2/5">
               <svg width="227" height="10" viewBox="0 0 227 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <rect x="0.348755" width="155.518" height="10" rx="5" fill="#00CFFF"/>
+              <rect x="0.348755" width="195" height="10" rx="5" fill="#00CFFF"/>
               <rect x="0.5" y="0.5" width="226" height="9" rx="4.5" stroke="white"/>
               </svg>
             </div>
-            <h3 class="ml-4">55%</h3>
+            <h3 class="ml-4">86</h3>
           </div>
           <div class="flex w-full justify-evenly items-center mb-4">
             <h3 class="w-1/5">Magister</h3>
             <div class="flex items-center w-2/5">
               <svg width="227" height="10" viewBox="0 0 227 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <rect x="0.348755" width="155.518" height="10" rx="5" fill="#00CFFF"/>
+              <rect x="0.348755" width="154" height="10" rx="5" fill="#00CFFF"/>
               <rect x="0.5" y="0.5" width="226" height="9" rx="4.5" stroke="white"/>
               </svg>
             </div>
-            <h3 class="ml-4">55%</h3>
+            <h3 class="ml-4">68</h3>
           </div>
           <div class="flex w-full justify-evenly items-center mb-4">
             <h3 class="w-1/5">ASN</h3>
             <div class="flex items-center w-2/5">
               <svg width="227" height="10" viewBox="0 0 227 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <rect x="0.348755" width="155.518" height="10" rx="5" fill="#00CFFF"/>
+              <rect x="0.348755" width="195" height="10" rx="5" fill="#00CFFF"/>
               <rect x="0.5" y="0.5" width="226" height="9" rx="4.5" stroke="white"/>
               </svg>
             </div>
-            <h3 class="ml-4">55%</h3>
+            <h3 class="ml-4">86</h3>
           </div>
           <div class="flex w-full justify-evenly items-center mt-8">
             <h3 class="w-1/5">Deze site</h3>
             <div class="flex items-center w-2/5">
               <svg width="227" height="10" viewBox="0 0 227 10" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <rect x="0.348755" width="155.518" height="10" rx="5" fill="#00CFFF"/>
+              <rect x="0.348755" width="213" height="10" rx="5" fill="#00CFFF"/>
               <rect x="0.5" y="0.5" width="226" height="9" rx="4.5" stroke="white"/>
               </svg>
             </div>
-            <h3 class="ml-4">55%</h3>
+            <h3 class="ml-4">94</h3>
+          </div>
+        </div>
+        <h2 class="italic mt-8 text-lg lg:text-xl">Resultaten in grafieken (percentage van criteria voldaan)</h2>
+        <div class="mt-8 flex items-center border border-white py-4 flex-wrap w-full lg:w-4/5 mx-auto">
+          <div class="flex w-full justify-evenly items-center mb-4">
+            <h3 class="w-1/5">AH</h3>
+            <div class="flex items-center w-2/5">
+              <svg width="227" height="10" viewBox="0 0 227 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="0.348755" width="209" height="10" rx="5" fill="#00CFFF"/>
+              <rect x="0.5" y="0.5" width="226" height="9" rx="4.5" stroke="white"/>
+              </svg>
+            </div>
+            <h3 class="ml-4">92,3%</h3>
+          </div>
+          <div class="flex w-full justify-evenly items-center mb-4">
+            <h3 class="w-1/5">Yahoo</h3>
+            <div class="flex items-center w-2/5">
+              <svg width="227" height="10" viewBox="0 0 227 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="0.348755" width="178" height="10" rx="5" fill="#00CFFF"/>
+              <rect x="0.5" y="0.5" width="226" height="9" rx="4.5" stroke="white"/>
+              </svg>
+            </div>
+            <h3 class="ml-4">78,6%</h3>
+          </div>
+          <div class="flex w-full justify-evenly items-center mb-4">
+            <h3 class="w-1/5">Amazon</h3>
+            <div class="flex items-center w-2/5">
+              <svg width="227" height="10" viewBox="0 0 227 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="0.348755" width="197" height="10" rx="5" fill="#00CFFF"/>
+              <rect x="0.5" y="0.5" width="226" height="9" rx="4.5" stroke="white"/>
+              </svg>
+            </div>
+            <h3 class="ml-4">86,7%</h3>
+          </div>
+          <div class="flex w-full justify-evenly items-center mb-4">
+            <h3 class="w-1/5">PCC</h3>
+            <div class="flex items-center w-2/5">
+              <svg width="227" height="10" viewBox="0 0 227 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="0.348755" width="151" height="10" rx="5" fill="#00CFFF"/>
+              <rect x="0.5" y="0.5" width="226" height="9" rx="4.5" stroke="white"/>
+              </svg>
+            </div>
+            <h3 class="ml-4">66,7%</h3>
+          </div>
+          <div class="flex w-full justify-evenly items-center mb-4">
+            <h3 class="w-1/5">Inf. Ba.</h3>
+            <div class="flex items-center w-2/5">
+              <svg width="227" height="10" viewBox="0 0 227 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="0.348755" width="151" height="10" rx="5" fill="#00CFFF"/>
+              <rect x="0.5" y="0.5" width="226" height="9" rx="4.5" stroke="white"/>
+              </svg>
+            </div>
+            <h3 class="ml-4">66,7%</h3>
+          </div>
+          <div class="flex w-full justify-evenly items-center mb-4">
+            <h3 class="w-1/5">Facebook</h3>
+            <div class="flex items-center w-2/5">
+              <svg width="227" height="10" viewBox="0 0 227 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="0.348755" width="185" height="10" rx="5" fill="#00CFFF"/>
+              <rect x="0.5" y="0.5" width="226" height="9" rx="4.5" stroke="white"/>
+              </svg>
+            </div>
+            <h3 class="ml-4">81,3%</h3>
+          </div>
+          <div class="flex w-full justify-evenly items-center mb-4">
+            <h3 class="w-1/5">Google</h3>
+            <div class="flex items-center w-2/5">
+              <svg width="227" height="10" viewBox="0 0 227 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="0.348755" width="212" height="10" rx="5" fill="#00CFFF"/>
+              <rect x="0.5" y="0.5" width="226" height="9" rx="4.5" stroke="white"/>
+              </svg>
+            </div>
+            <h3 class="ml-4">93,3%</h3>
+          </div>
+          <div class="flex w-full justify-evenly items-center mb-4">
+            <h3 class="w-1/5">YouTube</h3>
+            <div class="flex items-center w-2/5">
+              <svg width="227" height="10" viewBox="0 0 227 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="0.348755" width="227" height="10" rx="5" fill="#00CFFF"/>
+              <rect x="0.5" y="0.5" width="226" height="9" rx="4.5" stroke="white"/>
+              </svg>
+            </div>
+            <h3 class="ml-4">100%</h3>
+          </div>
+          <div class="flex w-full justify-evenly items-center mb-4">
+            <h3 class="w-1/5">Magister</h3>
+            <div class="flex items-center w-2/5">
+              <svg width="227" height="10" viewBox="0 0 227 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="0.348755" width="140" height="10" rx="5" fill="#00CFFF"/>
+              <rect x="0.5" y="0.5" width="226" height="9" rx="4.5" stroke="white"/>
+              </svg>
+            </div>
+            <h3 class="ml-4">61,6%</h3>
+          </div>
+          <div class="flex w-full justify-evenly items-center mb-4">
+            <h3 class="w-1/5">ASN</h3>
+            <div class="flex items-center w-2/5">
+              <svg width="227" height="10" viewBox="0 0 227 10" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="0.348755" width="208" height="10" rx="5" fill="#00CFFF"/>
+              <rect x="0.5" y="0.5" width="226" height="9" rx="4.5" stroke="white"/>
+              </svg>
+            </div>
+            <h3 class="ml-4">91,7%</h3>
           </div>
         </div>
       </div>
-      <div id="interpretations">
-        <h2 class="italic mt-8">Interpretatie van resultaten</h2>
+      <div id="interpretations" class="mb-8">
+        <h2 class="italic mt-8 text-lg lg:text-xl">Interpretatie van resultaten</h2>
+        <h3 class="font-bold mt-4">Hoe de websites er voor staan</h3>
+        <h4 class="italic">Lighthouse scores</h4>
+        <p>Wat we uit de resultaten kunnen halen is dat twee van de onderzochtte websites, een Lighthouse score heeft van tussen de 60-69. Dit betekent dat deze websites voor het grotendeels onvoldoende rekening houden met mensen met een beperking, die hulpmiddelen nodig hebben om een website te gebruiken, zoals een screen reader.
+          Eén website heeft een score van tussen de 70 en 79. Voor deze website geldt dat het al een stuk op weg is om een toegankelijke website te worden, maar nog een aantal zaken op orde moet stellen. 
+        </p>
+        <p>De grootste groep websites, die samen tussen de 80-89 score zitten, zijn vrij toegankelijk. Een persoon die een hulpmiddel gebruikt, zoals de eerder genoemde screen reader, zou weinig hindernissen voor zich vinden.
+          Zeker voor grote websites die veel onderhoud vergen, zoals YouTube, is een score binnen de 80-89 acceptabel en realistisch.
+        </p>
+        <p>Als laatst hebben we de groep websites die in het scorebereik van de 90-100 zitten. Dit zijn websites die maar een klein aantal verbeteringen kunnen doorvoeren in de code van hun pagina’s.</p>
+        <h4 class="italic mt-4">Percentage van criteria die worden voldaan</h4>
+        <p>De drie websites, waarvan één website 61,6% heeft behaald en twee websites 66,7%, voldoen aan relatief weinig criteria. Voor de websites die de 66,7% hebben behaald, geldt dat ze veranderingen moeten doorvoeren in de onderdelen van hun pagina’s die een programma zoals Lighthouse niet kan toetsen. Denk hierbij aan inhoudelijke alt-teksten die een afbeelding beschrijven; Lighthouse weet of een afbeelding wel of niet een alt-tekst heeft, maar niet of de tekst (als die er is) ook nuttig en inhoudelijk is voor mensen die afhankelijk zijn van screen readers.</p>
+        <p>
+          Eén website, Yahoo, doet het al beter, maar mist essentiële toegankelijkheidsmiddelen, zoals een link die de navigatie overslaat.
+        </p>
+        <p>
+          Facebook en Amazon doen het redelijk goed met een percentage tussen de 80-89%.
+          De overige websites met een percentage tussen de 90-100% voldoen aan bijna alle criteria (van toepassing).          
+        </p>
+        <h3 class="font-bold mt-4">Een veelvoorkomend probleem</h3>
+        <p class="mb-32">Wat wij hebben gemerkt is dat 8 van de 10 websites niet voldoen aan criteria #4: 
+          Er is een sterk kleurcontrast tussen tekst en achtergrond (zie bijlage 2). 
+          Dit probleem komt veel voor - een belangrijke oorzaak hiervoor is dat websites design boven toegankelijkheid plaatsen, wanneer het neerkomt op kleuren. Een lichtgroene tekst op een achtergrond van wit kan er mooi uitzien; maar mensen die moeite hebben om kleuren te onderscheiden zullen eronder lijden.</p>
       </div>
     </section>
   </main>
@@ -823,8 +918,8 @@
       </ul>
     </div>
   </footer>
-  <script src="/pws/common/navbar.js"></script>
-  <!-- <script src="common/navbar.js"></script> -->
+  <!-- <script src="/pws/common/navbar.js"></script> -->
+  <script src="common/navbar.js"></script>
   <style>
     th, td {
       text-align: left;
@@ -852,8 +947,21 @@
     // Code from W3Schools:
     const accordion = document.getElementsByClassName('accordion');
     const arrow = document.getElementsByClassName('arrow');
+    const answers = document.getElementsByTagName('td');
     let i = 0;
     
+    for (i = 0; i < answers.length; i++) {
+      if (answers[i].textContent == 'Ja') {
+        answers[i].classList.add('bg-green-900');
+      }
+      else if (answers[i].textContent == 'Nee') {
+        answers[i].classList.add('bg-red-900');
+      }
+      else if (answers[i].textContent == 'nvt') {
+        answers[i].classList.add('bg-gray-800')
+      }
+    }
+
     for (i = 0; i < accordion.length; i++) {
     accordion[i].addEventListener("click", function() {
     this.classList.toggle("active");
